@@ -1,22 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { render } from 'react-dom';
+import Provider from '../components/Provider';
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-);
-
-Hello.defaultProps = {
-  name: 'Fooberto'
-};
-
-Hello.propTypes = {
-  name: PropTypes.string
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
-  )
-});
+render(<Provider>::foo::👻</Provider>, document.querySelector('#root'));
