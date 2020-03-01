@@ -7,7 +7,7 @@ module Types
           null: false, description: 'Returns a list of items in the nerd library.'
 
     def items
-      Item.all
+      Item.preload(:user)
     end
   end
 end
