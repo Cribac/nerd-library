@@ -4,9 +4,9 @@ module Types
     field :email, String, null: false
     field :user_name, String, null: false
     field :uppercase_name, String, null: false
-  end
 
-  def uppercase_name
-    object.user_name.upcase
+    def uppercase_name
+      object.user_name.upcase
+    end
   end
 end
