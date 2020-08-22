@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Types::QueryType do
-  describe "items" do
+  describe 'items' do
     let!(:items) { create_pair(:item) }
 
     let(:query) do
